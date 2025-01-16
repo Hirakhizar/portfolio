@@ -2,14 +2,14 @@
     "builds": [
       {
         "src": "public/index.php",
-        "use": "@vercel/php"
+        "use": "@vercel/php",
+        "config": {
+          "composer": "install --no-dev --optimize-autoloader"
+        }
       }
     ],
     "env": {
       "COMPOSER_MEMORY_LIMIT": "-1"
-    },
-    "scripts": {
-      "build": "composer install --no-dev --optimize-autoloader && php artisan migrate --force"
     }
   }
   
