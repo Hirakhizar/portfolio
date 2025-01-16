@@ -2,10 +2,7 @@
     "builds": [
       {
         "src": "public/index.php",
-        "use": "@vercel/php",
-        "config": {
-          "composer": "install --no-dev --optimize-autoloader"
-        }
+        "use": "@vercel/php"
       }
     ],
     "env": {
